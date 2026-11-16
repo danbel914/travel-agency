@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Travels</title>
+
+    <!-- Bootstrap CSS + Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Our custom theme (loads after Bootstrap so it can override it) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80">
+
+    <!-- ===================== 1. NAVBAR ===================== -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-brand-dark sticky-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+                <i class="bi bi-airplane-engines-fill brand-icon"></i>
+                <span class="lh-1">
+                    <span class="brand-name">Wanderlust <span class="text-white">Travels</span></span>
+                    <small class="d-block brand-tagline">Explore More. Worry Less.</small>
+                </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navLinks"
+                    aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navLinks">
+                <ul class="navbar-nav ms-auto gap-md-1">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tours">Tours</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===================== 2. HERO (jumbotron) ===================== -->
+    <header class="hero d-flex align-items-center text-center text-white" id="home">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <p class="eyebrow mb-2">Welcome to Wanderlust Travels</p>
+                    <h1 class="display-3 fw-bold mb-3">Discover the World, One Journey at a Time</h1>
+                    <p class="lead mb-4 mx-auto hero-sub">
+                        Handpicked destinations, stress-free tour packages and friendly travel experts
+                        ready to plan your next unforgettable trip.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                        <a href="#destinations" class="btn btn-brand btn-lg px-4">
+                            <i class="bi bi-compass me-2"></i>Explore Destinations
+                        </a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg px-4">
+                            <i class="bi bi-calendar-check me-2"></i>Book a Trip
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick stats -->
+            <div class="row justify-content-center g-3 mt-5 stats">
+                <div class="col-4 col-md-3">
+                    <h3 class="fw-bold mb-0">50+</h3>
+                    <small>Destinations</small>
+                </div>
+                <div class="col-4 col-md-3">
+                    <h3 class="fw-bold mb-0">10k+</h3>
+                    <small>Happy Travellers</small>
+                </div>
+                <div class="col-4 col-md-3">
+                    <h3 class="fw-bold mb-0">4.9<i class="bi bi-star-fill text-brand fs-5 ms-1"></i></h3>
+                    <small>Average Rating</small>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===================== 3. DESTINATIONS ===================== -->
+    <section class="py-5" id="destinations">
+        <div class="container py-md-4">
+            <div class="section-title text-center mb-5">
+                <h2 class="fw-bold">Popular Destinations</h2>
+                <p class="text-secondary mb-0">Places our travellers can't stop talking about</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Santorini -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100 dest-card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=700&q=80" class="card-img-top" alt="White houses of Santorini above the blue sea" onerror="this.remove()">
+                            <span class="badge bg-brand position-absolute top-0 start-0 m-3">Best Seller</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <p class="text-secondary small mb-1"><i class="bi bi-geo-alt-fill text-brand"></i> Greece</p>
+                            <h5 class="card-title fw-bold">Santorini</h5>
+                            <p class="card-text text-secondary flex-grow-1">Whitewashed villages, blue-domed churches and the most famous sunsets in the Aegean Sea.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">From &#8358;1.8M</span>
+                                <a href="#tours" class="btn btn-brand btn-sm px-3">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bali -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100 dest-card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=700&q=80" class="card-img-top" alt="Temple gate in Bali" onerror="this.remove()">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <p class="text-secondary small mb-1"><i class="bi bi-geo-alt-fill text-brand"></i> Indonesia</p>
+                            <h5 class="card-title fw-bold">Bali</h5>
+                            <p class="card-text text-secondary flex-grow-1">Rice terraces, ancient temples and laid-back beaches on the Island of the Gods.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">From &#8358;1.5M</span>
+                                <a href="#tours" class="btn btn-brand btn-sm px-3">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paris -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100 dest-card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=700&q=80" class="card-img-top" alt="Eiffel Tower in Paris" onerror="this.remove()">
+                            <span class="badge bg-success position-absolute top-0 start-0 m-3">Honeymoon Pick</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <p class="text-secondary small mb-1"><i class="bi bi-geo-alt-fill text-brand"></i> France</p>
+                            <h5 class="card-title fw-bold">Paris</h5>
+                            <p class="card-text text-secondary flex-grow-1">The city of lights: the Eiffel Tower, world-class museums and cosy cafés on every corner.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">From &#8358;2.1M</span>
+                                <a href="#tours" class="btn btn-brand btn-sm px-3">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dubai -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100 dest-card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=700&q=80" class="card-img-top" alt="Dubai skyline" onerror="this.remove()">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <p class="text-secondary small mb-1"><i class="bi bi-geo-alt-fill text-brand"></i> United Arab Emirates</p>
+                            <h5 class="card-title fw-bold">Dubai</h5>
+                            <p class="card-text text-secondary flex-grow-1">Record-breaking skyscrapers, desert safaris and luxury shopping all in one city.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">From &#8358;1.2M</span>
+                                <a href="#tours" class="btn btn-brand btn-sm px-3">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cape Town -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100 dest-card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&w=700&q=80" class="card-img-top" alt="Table Mountain above Cape Town" onerror="this.remove()">
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <p class="text-secondary small mb-1"><i class="bi bi-geo-alt-fill text-brand"></i> South Africa</p>
+                            <h5 class="card-title fw-bold">Cape Town</h5>
+                            <p class="card-text text-secondary flex-grow-1">Table Mountain views, winelands, penguin beaches and a scenic drive along the coast.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">From &#8358;1.1M</span>
+                                <a href="#tours" class="btn btn-brand btn-sm px-3">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Zanzibar -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100 dest-card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=80" class="card-img-top" alt="Turquoise beach in Zanzibar" onerror="this.remove()">
+                            <span class="badge bg-info text-dark position-absolute top-0 start-0 m-3">New</span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <p class="text-secondary small mb-1"><i class="bi bi-geo-alt-fill text-brand"></i> Tanzania</p>
+                            <h5 class="card-title fw-bold">Zanzibar</h5>
+                            <p class="card-text text-secondary flex-grow-1">White-sand beaches, turquoise water and the spice-scented streets of Stone Town.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">From &#8358;950k</span>
+                                <a href="#tours" class="btn btn-brand btn-sm px-3">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== 4. TOURS (accordion) ===================== -->
+    <section class="py-5 bg-cream" id="tours">
+        <div class="container py-md-4">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-5">
+                    <div class="tours-img rounded-4 overflow-hidden shadow">
+                        <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80" class="w-100 h-100 object-fit-cover" alt="Traveller looking over a map" onerror="this.remove()">
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+                    <div class="section-title mb-4">
+                        <h2 class="fw-bold">Tour Packages</h2>
+                        <p class="text-secondary mb-0">Flights, hotels and guides sorted. You just pack your bags.</p>
+                    </div>
+
+                    <div class="accordion" id="tourAccordion">
+                        <!-- Tour 1 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tour1" aria-expanded="true" aria-controls="tour1">
+                                    <i class="bi bi-sun me-2 text-brand"></i> Weekend Getaway
+                                    <span class="badge bg-brand ms-auto me-3">3 Days</span>
+                                </button>
+                            </h3>
+                            <div id="tour1" class="accordion-collapse collapse show" data-bs-parent="#tourAccordion">
+                                <div class="accordion-body">
+                                    A quick escape to Zanzibar or Dubai with return flights, a 4-star hotel, airport
+                                    transfers and one guided city tour. Perfect for a long weekend.
+                                    <div class="mt-2"><a href="#contact" class="link-brand fw-bold">View Details <i class="bi bi-arrow-right"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tour 2 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tour2" aria-expanded="false" aria-controls="tour2">
+                                    <i class="bi bi-heart me-2 text-brand"></i> Romantic Honeymoon
+                                    <span class="badge bg-brand ms-auto me-3">7 Days</span>
+                                </button>
+                            </h3>
+                            <div id="tour2" class="accordion-collapse collapse" data-bs-parent="#tourAccordion">
+                                <div class="accordion-body">
+                                    A week in Santorini or Paris for two, with a sea-view or city-view suite, candlelit
+                                    dinners, a sunset cruise and private transfers throughout.
+                                    <div class="mt-2"><a href="#contact" class="link-brand fw-bold">View Details <i class="bi bi-arrow-right"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tour 3 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tour3" aria-expanded="false" aria-controls="tour3">
+                                    <i class="bi bi-people me-2 text-brand"></i> Family Adventure
+                                    <span class="badge bg-brand ms-auto me-3">10 Days</span>
+                                </button>
+                            </h3>
+                            <div id="tour3" class="accordion-collapse collapse" data-bs-parent="#tourAccordion">
+                                <div class="accordion-body">
+                                    Kid-friendly fun in Bali: water parks, a monkey forest visit, cooking classes and a
+                                    family villa with a private pool. Children under 5 travel free.
+                                    <div class="mt-2"><a href="#contact" class="link-brand fw-bold">View Details <i class="bi bi-arrow-right"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Tour 4 -->
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tour4" aria-expanded="false" aria-controls="tour4">
+                                    <i class="bi bi-binoculars me-2 text-brand"></i> African Safari Explorer
+                                    <span class="badge bg-brand ms-auto me-3">8 Days</span>
+                                </button>
+                            </h3>
+                            <div id="tour4" class="accordion-collapse collapse" data-bs-parent="#tourAccordion">
+                                <div class="accordion-body">
+                                    Game drives to spot the Big Five, nights in a luxury tented camp and a final stop in
+                                    Cape Town to relax by the ocean. All meals and park fees included.
+                                    <div class="mt-2"><a href="#contact" class="link-brand fw-bold">View Details <i class="bi bi-arrow-right"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== 5. CONTACT FORM ===================== -->
+    <section class="py-5" id="contact">
+        <div class="container py-md-4">
+            <div class="section-title text-center mb-5">
+                <h2 class="fw-bold">Plan Your Trip</h2>
+                <p class="text-secondary mb-0">Tell us where you want to go and we'll handle the rest</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label fw-semibold">Full Name</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                    <div class="invalid-feedback">Please enter your name.</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="email" class="form-label fw-semibold">Email Address</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                    <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                                    <div class="invalid-feedback">Please enter a valid email.</div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="destination" class="form-label fw-semibold">Destination of Interest</label>
+                                <div class="input-group has-validation">
+                                    <span class="input-group-text"><i class="bi bi-geo-alt"></i></span>
+                                    <select class="form-select" id="destination" required>
+                                        <option value="" selected disabled>Choose a destination...</option>
+                                        <option>Santorini, Greece</option>
+                                        <option>Bali, Indonesia</option>
+                                        <option>Paris, France</option>
+                                        <option>Dubai, UAE</option>
+                                        <option>Cape Town, South Africa</option>
+                                        <option>Zanzibar, Tanzania</option>
+                                        <option>Not sure yet</option>
+                                    </select>
+                                    <div class="invalid-feedback">Please pick a destination.</div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="message" class="form-label fw-semibold">Message</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Travel dates, number of travellers, budget..." required></textarea>
+                                <div class="invalid-feedback">Please write a short message.</div>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-brand btn-lg w-100">
+                                    <i class="bi bi-send-fill me-2"></i>Send Enquiry
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="alert alert-success mt-3 d-none" id="formSuccess" role="alert">
+                        <i class="bi bi-check-circle-fill me-2"></i>Thank you! A travel expert will get back to you within 24 hours.
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="contact-info bg-cream rounded-4 p-4 h-100">
+                        <div class="d-flex gap-3 align-items-center mb-4">
+                            <span class="info-icon"><i class="bi bi-geo-alt-fill"></i></span>
+                            <div><strong class="d-block">Our Office</strong>12 Adventure Avenue, Lagos, Nigeria</div>
+                        </div>
+                        <div class="d-flex gap-3 align-items-center mb-4">
+                            <span class="info-icon"><i class="bi bi-telephone-fill"></i></span>
+                            <div><strong class="d-block">Call Us</strong>+234 800 000 0000</div>
+                        </div>
+                        <div class="d-flex gap-3 align-items-center mb-4">
+                            <span class="info-icon"><i class="bi bi-envelope-fill"></i></span>
+                            <div><strong class="d-block">Email Us</strong>hello@wanderlusttravels.com</div>
+                        </div>
+                        <div class="d-flex gap-3 align-items-center">
+                            <span class="info-icon"><i class="bi bi-clock-fill"></i></span>
+                            <div><strong class="d-block">Office Hours</strong>Mon – Sat, 9am – 6pm</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== 6. FOOTER ===================== -->
+    <footer class="bg-brand-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center gy-3 text-center text-md-start">
+                <div class="col-md-4">
+                    <span class="brand-name fs-5">Wanderlust <span class="text-white">Travels</span></span>
+                    <small class="d-block brand-tagline">Explore More. Worry Less.</small>
+                </div>
+                <div class="col-md-4 text-md-center">
+                    <small>&copy; 2026 Wanderlust Travels. All rights reserved.</small>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex gap-2 justify-content-center justify-content-md-end">
+                        <a href="#" class="social" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="social" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (needed for the navbar toggle, accordion and scrollspy) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Close the mobile menu after a link is tapped
+        document.querySelectorAll('#navLinks .nav-link').forEach(function (link) {
+            link.addEventListener('click', function () {
+                var menu = bootstrap.Collapse.getInstance(document.getElementById('navLinks'));
+                if (menu) menu.hide();
+            });
+        });
+
+        // Bootstrap form validation. There's no server yet, so show a thank-you message
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            if (!this.checkValidity()) {
+                this.classList.add('was-validated');
+                return;
+            }
+            this.classList.remove('was-validated');
+            this.reset();
+            document.getElementById('formSuccess').classList.remove('d-none');
+        });
+    </script>
+
+</body>
+</html>
